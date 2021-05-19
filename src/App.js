@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import About from "./Components/About";
-import Resume from "./Components/Resume";
+import AboutNew from "./Components/About/";
 import Contact from "./Components/Contact";
 import Testimonials from "./Components/Testimonials";
 import Portfolio from "./Components/Portfolio";
 
 import "./App.css";
+import Experience from "./Components/Experience";
 
 const App = () => {
-  const [resumeData, setResumeData] = useState({});
+  const [resumeData, setResumeData] = useState(null);
 
   useEffect(() => {
     fetch("/resumeData.json")
@@ -23,13 +23,17 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header data={resumeData.main} />
-      <About data={resumeData.main} />
-      <Resume data={resumeData.resume} />
-      <Portfolio data={resumeData.portfolio} />
-      <Testimonials data={resumeData.testimonials} />
-      <Contact data={resumeData.main} />
-      <Footer data={resumeData.main} />
+      {resumeData && (
+        <>
+          <Header data={resumeData.main} />
+          <AboutNew data={resumeData.main} skills={resumeData.resume.skills} counter={resumeData.resume.counter} />
+          <Experience data={resumeData.resume} />
+          <Portfolio data={resumeData.portfolio} />
+          <Testimonials data={resumeData.testimonials} />
+          <Contact data={resumeData.main} />
+          <Footer data={resumeData.main} />
+        </>
+      ) }
     </div>
   );
 };

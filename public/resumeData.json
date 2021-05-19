@@ -1,45 +1,44 @@
 {
   "main": {
-    "name": "Sonny Sangha",
-    "occupation": "CEO of PAPA",
-    "description": "I eat, sleep and breathe React",
+    "name": "Khalid Saifullah",
+    "occupation": "CEO at KS Devware",
+    "description": "Passionate Programmer",
     "image": "profilepic.jpg",
-    "bio": "Hi there! I am Sonny! You might also know me as PAPA React. I've been coding for over 10 years now. As a Full Stack developer I've worked both with startups and large corporations to help build & scale their companies. Along the journey I realised my passion existed in helping others excel and pursue their dreams as upcoming developers. With this passion, I have now trained thousand's of developers across the globe. Through live coaching sessions on Youtube, I have accumulated several MILLION views demonstrating how to apply developer skills in a range of cool builds and challenges. I deliver REAL VALUE by teaching REAL WORLD projects to help students enter the world of web development. You’ll get hands-on experience and learn the skills that are required to succeed in the real-world in this community.",
-    "contactmessage": "Get in touch with me to be a part of the PAPA fam!",
-    "email": "papareact.team@gmail.com",
-    "phone": "+44 1234567899",
+    "bio": "Hello! I’m Khalid Saifullah. I’ve Been working as full-stack web developer and UI/UX designer over 3 Years. I provide you with the technology that you would require to create and deploy the most engaging and easy mobile and web development apps along with other IT services. I not only believe in providing you with the best IT services but also ensure post support services as well.",
+    "email": "khalideofficial@gmail.com",
+    "phone": "+880 1787463481",
     "address": {
-      "street": "123 Dev Lane",
-      "city": "London",
-      "state": "Devosphere",
-      "zip": "W3B D3V"
+      "street": "A. Rajjak khan street",
+      "city": "Barishal",
+      "state": "Barishal",
+      "zip": "8205"
     },
-    "website": "https://www.papareact.com/course",
-    "resumedownload": "http://papareact.com",
+    "website": "https://www.ksdevware.com",
+    "resumedownload": "https://my.indeed.com/p/khalids-a9aptgc",
     "social": [
       {
         "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA",
+        "url": "https://www.youtube.com/channel/UCAXL07qCSIZrlbyA31QzwBA",
         "className": "fa fa-youtube"
       },
       {
         "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
+        "url": "https://www.facebook.com/khalide.saifullah",
         "className": "fa fa-facebook"
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha",
+        "url": "https://www.linkedin.com/in/coderkhalid",
         "className": "fa fa-linkedin"
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/ssssangha/",
+        "url": "https://www.instagram.com/coderkhalid/",
         "className": "fa fa-instagram"
       },
       {
         "name": "github",
-        "url": "https://github.com/PapaReact",
+        "url": "https://github.com/coderkhalide",
         "className": "fa fa-github"
       }
     ]
@@ -48,74 +47,152 @@
     "skillmessage": "My Programming Language Proficiency",
     "education": [
       {
-        "school": "University of Kent - UK",
-        "degree": "Bachelor's Degree, Computer Science",
-        "graduated": "July 2016",
-        "description": "Graduated with First Class Honours"
+        "school": "L.R.C.M Cadet Madrasah, Barishal",
+        "degree": "Dakhil",
+        "graduated": "July 2019",
+        "description": "Passed Dakhil with 5.0 GPA"
+      },
+      {
+        "school": "L.R.C.M Cadet Madrasah, Barishal",
+        "degree": "Junior dakhil certificate (JDC)",
+        "graduated": "July 2017",
+        "description": "Passed JDC with 5.0 GPA"
+      },
+      {
+        "school": "L.R.C.M Cadet Madrasah, Barishal",
+        "degree": "Ebtedayee",
+        "graduated": "July 2015",
+        "description": "Passed Ebtedayee with 5.0 GPA"
       }
     ],
     "work": [
       {
-        "company": "PAPA",
-        "title": "Founder and CEO",
-        "years": "May 2019 - Present",
-        "description": "Cloning all the apps possible. On the way to clone the world! Building the PAPA Fam as large as possible."
+        "company": "KS Devware",
+        "title": "CEO and Founder",
+        "years": "March 2021 - Present",
+        "description": "we create website firm that specializes in growing business to business companies. Our designs are cutting edge, and our results are unmatched. In a time where digital proficiency matters more than ever, we are the partner you are looking for."
+      },
+      {
+        "company": "DP-Websolutions",
+        "title": "Web Developer & UI/UX designer",
+        "years": "July 2020 - Present",
+        "description": "Developed many websites. Worked on improving user interfaces for websites. Optimized website speed. Helped to solve websites issues/bugs"
+      },
+      {
+        "company": "Ganlax Group",
+        "title": "Web Developer",
+        "years": "March 2020 - Present",
+        "description": "Developed company website. Maintenance and support"
+      }
+    ],
+    "counter": [
+      {
+        "title": "Projects completed",
+        "count": 44,
+        "icon": "fire"
+      },
+      {
+        "title": "Cup of coffee",
+        "count": 2305,
+        "icon": "mug"
+      },
+      {
+        "title": "Satisfied clients",
+        "count": 32,
+        "icon": "users"
+      },
+      {
+        "title": "Award won",
+        "count": 3,
+        "icon": "award"
       }
     ],
     "skills": [
       {
-        "name": "ReactJs",
-        "level": "100%"
-      },
-      {
-        "name": "Python",
-        "level": "85%"
-      },
-      {
-        "name": "Git",
-        "level": "70%"
-      },
-      {
         "name": "JavaScript",
-        "level": "99%"
+        "level": 90
       },
       {
-        "name": "Web Development",
-        "level": "95%"
+        "name": "React",
+        "level": 100
+      },
+      {
+        "name": "Node JS",
+        "level": 70
+      },
+      {
+        "name": "UI/UX",
+        "level": 80
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Snapchat Clone (React JS)",
+        "title": "Hyvinvoivin website's UI design and development",
         "category": "",
-        "image": "snapchat.jpg",
-        "url": "https://youtu.be/1kGISk5ft2w"
+        "image": "hyvn.jpg",
+        "url": "https://hyvinvoivin.fi"
       },
       {
-        "title": "Gmail Clone (React JS)",
+        "title": "Ganlax group's website development",
         "category": "",
-        "image": "gmail.jpg",
-        "url": "https://youtu.be/b7nrXjS6Dqs"
+        "image": "ganlax.jpg",
+        "url": "http://ganlaxgroup.co.uk"
       },
       {
-        "title": "LinkedIn Clone (React JS)",
+        "title": "Daily-dairy website development",
         "category": "",
-        "image": "linkedin.jpg",
-        "url": "https://youtu.be/QaYts9sPmcY"
+        "image": "daily-dairy.jpg",
+        "url": "https://daily-dairy.com/"
+      },
+      {
+        "title": "Zoom Clone",
+        "category": "",
+        "image": "zoom-clone.jpg",
+        "url": "https://ksdevware.com/dekto"
+      },
+      {
+        "title": "Peer4Tree website's UI design",
+        "category": "",
+        "image": "peer4tree.jpg",
+        "url": "https://peer4-tree.web.app"
+      },
+      {
+        "title": "KS Loomly - MERN blog website",
+        "category": "",
+        "image": "ks-loomly.jpg",
+        "url": "https://ks-loomly.herokuapp.com"
+      },
+      {
+        "title": "Whatsapp clone",
+        "category": "",
+        "image": "whatsapp.jpg",
+        "url": "https://whatsapp-clone-nextjs-six.vercel.app"
+      },
+      {
+        "title": "KS Classroom",
+        "category": "",
+        "image": "classroom.jpg",
+        "url": "https://ksdevware.com/classroom"
+      },
+      {
+        "title": "Prolingua website's UI design and development",
+        "category": "",
+        "image": "prolingua.jpg",
+        "url": "https://prolingua.fi"
       }
     ]
   },
   "testimonials": {
     "testimonials": [
       {
-        "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
-        "user": "Jorge Fouto"
+        "text": "We are very content and happy wan all the work Khalid Saifullah has done for us! Not only did he just what he had to do, comes up with suggestions and improvements of his owns and points out weaknesses which he in perfect communication is able to improve. Recommended! ",
+        "user": "Jason Sindram - CTO at DP-Websolutions"
       },
       {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
-        "user": "Adam Curtis"
+        "text": "Superb. Great comms, understood the requirement, and delivered quickly. Multiple revisions allowed which were very helpful. I will work with him again.",
+        "user": "Bhavesh Patel - CEO at Ganlaxgroup"
       }
     ]
   }

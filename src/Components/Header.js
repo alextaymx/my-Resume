@@ -40,7 +40,7 @@ const Header = ({ data }) => {
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#resume">
+            <a className="smoothscroll" href="#experience">
               Resume
             </a>
           </li>
@@ -70,14 +70,13 @@ const Header = ({ data }) => {
           <h3>
             Based in {city}. <span>{occupation}</span>. {description}.
           </h3>
-          <hr />
           <ul className="social">{networks}</ul>
         </div>
       </div>
 
       <p className="scrolldown">
         <a className="smoothscroll" href="#about">
-          <i className="icon-down-circle"></i>
+          <img src="/images/scroll-down.gif" alt="" />
         </a>
       </p>
     </header>

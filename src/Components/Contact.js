@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Contact = ({ data }) => {
   const [name, setName] = useState("");
@@ -103,9 +104,10 @@ const Contact = ({ data }) => {
               </div>
 
               <div>
-                <button onClick={submitForm} type="submit" className="submit">
+                {/* <button onClick={submitForm} type="submit" className="submit">
                   Submit
-                </button>
+                </button> */}
+                <Button title="Submit" onClick={submitForm} type="submit" />
               </div>
             </fieldset>
           </form>

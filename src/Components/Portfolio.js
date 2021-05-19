@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Portfolio = ({ data }) => {
   if (data) {
@@ -33,11 +34,12 @@ const Portfolio = ({ data }) => {
 
           <div
             id="portfolio-wrapper"
-            className="bgrid-quarters s-bgrid-thirds cf"
+            className="bgrid-thirds s-bgrid-halves cf"
           >
             {projects}
           </div>
         </div>
+        <center><Button title="Check Out my GitHub" link="https://github.com/coderkhalide" /></center>
       </div>
     </section>
   );
