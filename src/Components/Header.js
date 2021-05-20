@@ -70,11 +70,11 @@ const Header = ({ data }) => {
       <div className="row banner">
         
           <div className="banner-text">
-            <Slide top>
+            <Fade top delay={700}>
               <h1 className="responsive-headline">
-              <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
-            </h1>
-            </Slide>
+                <span style={{ opacity: '0'}}>.</span><TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
+              </h1>
+            </Fade>
             <Fade bottom>
               <h3>
                 Based in {city}. <span>{occupation}</span>. {description}.
