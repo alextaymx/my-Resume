@@ -17,6 +17,6 @@
     -o-transition: all .4s;
 }
 .appButton:hover{
-    background-color: #fff;
+    background-color: transparent;
     color: #ff4c60 !important;
 }

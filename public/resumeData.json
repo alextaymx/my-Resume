@@ -88,41 +88,41 @@
     "counter": [
       {
         "title": "Projects completed",
-        "count": 44,
+        "count": 64,
         "icon": "fire"
       },
       {
         "title": "Cup of coffee",
-        "count": 2305,
+        "count": 1305,
         "icon": "mug"
       },
       {
         "title": "Satisfied clients",
-        "count": 32,
+        "count": 43,
         "icon": "users"
       },
       {
         "title": "Award won",
-        "count": 3,
+        "count": 5,
         "icon": "award"
       }
     ],
     "skills": [
       {
         "name": "JavaScript",
+        "level": 95
+      },
+      {
+        "name": "Front-end development",
         "level": 90
       },
       {
-        "name": "React",
-        "level": 100
+        "name": "Backend-development",
+        "level": 85
       },
       {
-        "name": "Node JS",
-        "level": 70
-      },
-      {
-        "name": "UI/UX",
-        "level": 80
+        "name": "UI/UX design",
+        "level": 95
       }
     ]
   },

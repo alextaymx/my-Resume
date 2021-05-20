@@ -30,7 +30,7 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 800px;
+   height: 100vh;
    min-height: 500px;
    width: 100%;
    background: #161415 url(../images/header-background.jpg) no-repeat top center;
@@ -191,7 +191,89 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #FF4C60; }
 
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   background: transparent !important;
+   letter-spacing: 1.5px;  
+   width: auto;
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+#nav-wrap > a {
+   width: 48px;
+   height: 48px;
+   text-align: left;
+   background-color: #CC5200;
+   position: relative;
+   border: none;
+   float: right;
 
+   font: 0/0 a;
+   text-shadow: none;
+   color: transparent;
+
+   position: relative;
+   top: 0px;
+   right: 30px;
+}
+
+#nav-wrap > a:before,
+#nav-wrap > a:after {
+   position: absolute;
+   border: 2px solid #fff;
+   top: 35%;
+   left: 25%;
+   right: 25%;
+   content: '';
+}
+#nav-wrap > a:after { top: 60%; }
+
+/* toggle buttons */
+#nav-wrap:not( :target ) > a:first-of-type,
+#nav-wrap:target > a:last-of-type  {
+   display: block;
+}
+
+/* hide menu panel */
+#nav-wrap ul#nav {
+   height: auto;
+   display: none;
+   clear: both;
+   width: auto;
+   float: right;
+   position: relative;
+   top: 12px;
+   right: 0;
+}
+
+/* display menu panels */
+#nav-wrap:target > ul#nav	{
+   display: block;
+   padding: 30px 20px 48px 20px;
+   background: #1f2024;
+   margin: 0 30px;
+   clear: both;
+}
+
+ul#nav li {
+   display: block;
+   height: auto;      
+   margin: 0 auto; 
+   padding: 0 4%;           
+   text-align: left;
+   border-bottom: 1px solid #2D2E34;
+   border-bottom-style: dotted; 
+}
+
+ul#nav li a {  
+   display: block;    
+   margin: 0;
+   padding: 0;      
+   margin: 12px 0; 
+   line-height: 16px; /* reset line-height from 48px */
+   border: none;
+}  
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
@@ -858,6 +940,7 @@ call-to-action .button {
    font-size: 15px;
    line-height: 24px;
    width: 65%;
+   border-radius: 15px;
 }
 #contact input:focus,
 #contact textarea:focus,
@@ -1009,4 +1092,4 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #FF4C60; }

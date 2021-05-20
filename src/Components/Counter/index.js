@@ -21,7 +21,7 @@ function Counter({ count, title, icon }) {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if(counter <= count) setCounter(counter + 1)
+            if(counter < count) setCounter(counter + 1)
         }, count > 1000 ? (count / 100000) * 2 : (count < 10 ? 600 : count))
         return () => clearInterval(interval)
     }, [counter, count])

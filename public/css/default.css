@@ -597,6 +597,15 @@ input[type="checkbox"] { display: inline; }
    max-width: 1020px;
    margin: 0 auto;
 }
+@media (max-width: 768px){
+   .row {
+      padding: 0 15px !important;
+   }
+}
+#contactMessage {
+   margin-bottom: 35px !important;
+   height: 200px;
+}
 /* fixed width for IE8 */
 .ie .row { width: 1000px ; }
 
