@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Counter.css'
+import Fade from 'react-reveal/Fade';
 
 function Counter({ count, title, icon }) {
     const [counter, setCounter] = useState(0)
@@ -27,13 +28,15 @@ function Counter({ count, title, icon }) {
     }, [counter, count])
     
     return (
-        <div className="counter">
-            <span className="counter__icon"><i class={icons[icon].icon}></i></span>
-            <div className="counter__content">
-                <h3>{counter}</h3>
-                <p>{title}</p>
+        <Fade bottom>
+            <div className="counter">
+                <span className="counter__icon"><i class={icons[icon].icon}></i></span>
+                <div className="counter__content">
+                    <h3>{counter}</h3>
+                    <p>{title}</p>
+                </div>
             </div>
-        </div>
+        </Fade>
     )
 }
 

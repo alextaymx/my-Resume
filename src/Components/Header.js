@@ -1,6 +1,8 @@
 import React from "react";
 import TypeWriter from "react-typewriter";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const Header = ({ data }) => {
   if (data) {
@@ -21,58 +23,67 @@ const Header = ({ data }) => {
 
   return (
     <header id="home">
-      <nav id="nav-wrap">
-        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-          Show navigation
-        </a>
-        <a className="mobile-btn" href="#nav-wrap-close" title="Hide navigation">
-          Hide navigation
-        </a>
+      <Slide top>
+        <nav id="nav-wrap">
+          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+            Show navigation
+          </a>
+          <a className="mobile-btn" href="#nav-wrap-close" title="Hide navigation">
+            Hide navigation
+          </a>
 
-        <ul id="nav" className="nav">
-          <li className="current">
-            <AnchorLink className="smoothscroll" href="#home">
-              Home
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink className="smoothscroll" href="#about">
-              About
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink className="smoothscroll" href="#experience">
-              Resume
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink className="smoothscroll" href="#portfolio">
-              Works
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink className="smoothscroll" href="#testimonials">
-              Testimonials
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink className="smoothscroll" href="#contact">
-              Contact
-            </AnchorLink>
-          </li>
-        </ul>
-      </nav>
-
+          <ul id="nav" className="nav">
+            <li className="current">
+              <AnchorLink className="smoothscroll" href="#home">
+                Home
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink className="smoothscroll" href="#about">
+                About
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink className="smoothscroll" href="#experience">
+                Resume
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink className="smoothscroll" href="#portfolio">
+                Works
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink className="smoothscroll" href="#testimonials">
+                Testimonials
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink className="smoothscroll" href="#contact">
+                Contact
+              </AnchorLink>
+            </li>
+          </ul>
+        </nav>
+      </Slide>
+      
       <div className="row banner">
-        <div className="banner-text">
-          <h1 className="responsive-headline">
-            <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
-          </h1>
-          <h3>
-            Based in {city}. <span>{occupation}</span>. {description}.
-          </h3>
-          <ul className="social">{networks}</ul>
-        </div>
+        
+          <div className="banner-text">
+            <Slide top>
+              <h1 className="responsive-headline">
+              <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
+            </h1>
+            </Slide>
+            <Fade bottom>
+              <h3>
+                Based in {city}. <span>{occupation}</span>. {description}.
+              </h3>
+            </Fade>
+            <Slide right>
+              <ul className="social">{networks}</ul>
+            </Slide>
+          </div>
       </div>
 
       <p className="scrolldown">

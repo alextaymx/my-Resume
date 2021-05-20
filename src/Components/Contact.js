@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import Fade from 'react-reveal/Fade';
 
 const Contact = ({ data }) => {
   const [name, setName] = useState("");
@@ -32,9 +33,11 @@ const Contact = ({ data }) => {
     <section id="contact">
       <div className="row section-head">
         <div className="two columns header-col">
-          <h1>
-            <span>Get In Touch.</span>
-          </h1>
+          <Fade right>
+            <h1>
+              <span>Get In Touch.</span>
+            </h1>
+          </Fade>
         </div>
 
         <div className="ten columns">
@@ -46,69 +49,71 @@ const Contact = ({ data }) => {
         <div className="eight columns">
           <form onSubmit={submitForm}>
             <fieldset>
-              <div>
-                <label htmlFor="contactName">
-                  Name <span className="required">*</span>
-                </label>
-                <input
-                  type="text"
-                  defaultValue=""
-                  value={name}
-                  size="35"
-                  id="contactName"
-                  name="contactName"
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </div>
+              <Fade bottom cascade>
+                <div>
+                  <label htmlFor="contactName">
+                    Name <span className="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    defaultValue=""
+                    value={name}
+                    size="35"
+                    id="contactName"
+                    name="contactName"
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="contactEmail">
-                  Email <span className="required">*</span>
-                </label>
-                <input
-                  type="text"
-                  defaultValue=""
-                  value={email}
-                  size="35"
-                  id="contactEmail"
-                  name="contactEmail"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
+                <div>
+                  <label htmlFor="contactEmail">
+                    Email <span className="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    defaultValue=""
+                    value={email}
+                    size="35"
+                    id="contactEmail"
+                    name="contactEmail"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="contactSubject">Subject</label>
-                <input
-                  type="text"
-                  defaultValue=""
-                  value={subject}
-                  size="35"
-                  id="contactSubject"
-                  name="contactSubject"
-                  onChange={(e) => setSubject(e.target.value)}
-                />
-              </div>
+                <div>
+                  <label htmlFor="contactSubject">Subject</label>
+                  <input
+                    type="text"
+                    defaultValue=""
+                    value={subject}
+                    size="35"
+                    id="contactSubject"
+                    name="contactSubject"
+                    onChange={(e) => setSubject(e.target.value)}
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="contactMessage">
-                  Message <span className="required">*</span>
-                </label>
-                <textarea
-                  cols="50"
-                  rows="15"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  id="contactMessage"
-                  name="contactMessage"
-                ></textarea>
-              </div>
+                <div>
+                  <label htmlFor="contactMessage">
+                    Message <span className="required">*</span>
+                  </label>
+                  <textarea
+                    cols="50"
+                    rows="15"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    id="contactMessage"
+                    name="contactMessage"
+                  ></textarea>
+                </div>
 
-              <div>
-                {/* <button onClick={submitForm} type="submit" className="submit">
-                  Submit
-                </button> */}
-                <Button title="Submit" onClick={submitForm} type="submit" />
-              </div>
+                <div>
+                  {/* <button onClick={submitForm} type="submit" className="submit">
+                    Submit
+                  </button> */}
+                  <Button title="Submit" onClick={submitForm} type="submit" />
+                </div>
+              </Fade>
             </fieldset>
           </form>
 
@@ -120,20 +125,22 @@ const Contact = ({ data }) => {
         </div>
 
         <aside className="four columns footer-widgets">
-          <div className="widget widget_contact">
-            <h4>Address and Phone</h4>
-            <p className="address">
-              {contactName}
-              <br />
-              {contactEmail}
-              <br />
-              <br />
-              {street} <br />
-              {city}, {state} {zip}
-              <br />
-              <span>{phone}</span>
-            </p>
-          </div>
+          <Fade right cascade>
+            <div className="widget widget_contact">
+              <h4>Address and Phone</h4>
+              <p className="address">
+                {contactName}
+                <br />
+                {contactEmail}
+                <br />
+                <br />
+                {street} <br />
+                {city}, {state} {zip}
+                <br />
+                <span>{phone}</span>
+              </p>
+            </div>
+          </Fade>
         </aside>
       </div>
     </section>
