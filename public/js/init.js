@@ -184,5 +184,11 @@
 
 
 
-
+let smoothScroll = new scrollToSmooth('a', {
+   targetAttribute: 'href',
+   easing: 'easeInOutBack',
+   duration: 800,
+   durationRelative: true,
+ })
+ smoothScroll.init()
 
