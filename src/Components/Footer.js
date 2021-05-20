@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Footer = ({ data }) => {
   if (data) {
@@ -29,9 +30,9 @@ const Footer = ({ data }) => {
           </ul>
         </div>
         <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#home">
+          <AnchorLink className="smoothscroll" title="Back to Top" href="#home">
             <i className="icon-up-open"></i>
-          </a>
+          </AnchorLink>
         </div>
       </div>
     </footer>

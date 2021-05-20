@@ -1,5 +1,6 @@
 import React from "react";
 import TypeWriter from "react-typewriter";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Header = ({ data }) => {
   if (data) {
@@ -24,40 +25,40 @@ const Header = ({ data }) => {
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>
-        <a className="mobile-btn" href="#home" title="Hide navigation">
+        <a className="mobile-btn" href="#nav-wrap-close" title="Hide navigation">
           Hide navigation
         </a>
 
         <ul id="nav" className="nav">
           <li className="current">
-            <a className="smoothscroll" href="#home">
+            <AnchorLink className="smoothscroll" href="#home">
               Home
-            </a>
+            </AnchorLink>
           </li>
           <li>
-            <a className="smoothscroll" href="#about">
+            <AnchorLink className="smoothscroll" href="#about">
               About
-            </a>
+            </AnchorLink>
           </li>
           <li>
-            <a className="smoothscroll" href="#experience">
+            <AnchorLink className="smoothscroll" href="#experience">
               Resume
-            </a>
+            </AnchorLink>
           </li>
           <li>
-            <a className="smoothscroll" href="#portfolio">
+            <AnchorLink className="smoothscroll" href="#portfolio">
               Works
-            </a>
+            </AnchorLink>
           </li>
           <li>
-            <a className="smoothscroll" href="#testimonials">
+            <AnchorLink className="smoothscroll" href="#testimonials">
               Testimonials
-            </a>
+            </AnchorLink>
           </li>
           <li>
-            <a className="smoothscroll" href="#contact">
+            <AnchorLink className="smoothscroll" href="#contact">
               Contact
-            </a>
+            </AnchorLink>
           </li>
         </ul>
       </nav>
@@ -75,9 +76,9 @@ const Header = ({ data }) => {
       </div>
 
       <p className="scrolldown">
-        <a className="smoothscroll" href="#about">
+        <AnchorLink className="smoothscroll" href="#about">
           <img src="/images/scroll-down.gif" alt="" />
-        </a>
+        </AnchorLink>
       </p>
     </header>
   );

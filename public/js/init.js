@@ -4,7 +4,6 @@
 /*
 -----------------------------------------------------------------------------------*/
 
- jQuery(document).ready(function($) {
 
 /*----------------------------------------------------*/
 /* FitText Settings
@@ -176,19 +175,6 @@
       return false;
    });
 
+   
 
 });
-
-
-
-
-
-
-let smoothScroll = new scrollToSmooth('a', {
-   targetAttribute: 'href',
-   easing: 'easeInOutBack',
-   duration: 800,
-   durationRelative: true,
- })
- smoothScroll.init()
-
